@@ -1,0 +1,24 @@
+platform:ios, '10.0'
+def testing_pods
+    pod 'AFNetworking', '3.2.1'
+    pod 'SDWebImage', '4.4.2'
+    pod 'MBProgressHUD', '1.1.0'
+    pod 'Masonry', '1.1.0'
+    pod 'MJRefresh', '3.1.15.7'
+    pod 'ReactiveObjC', '3.1.0'
+    pod 'Aspects', '1.4.1'
+    pod 'NerdyUI', '1.2.1'
+    pod 'KZWFoundation'
+pod 'pop', '~> 1.0'
+pod "OKObserver"
+    pod 'IQKeyboardManager', '5.0.8'  #新版本键盘收回导致内容上偏
+
+    pod 'JPush', '3.1.1.1'
+    pod 'JSPatch', '1.1.3'
+
+    pod 'MLeaksFinder', :configurations => ['Debug']
+end
+
+target 'Demo' do
+    testing_pods
+end

@@ -1,0 +1,91 @@
+//
+//  DemoPCH.pch
+//  Demo
+//
+//  Created by qiao on 09/04/2019.
+//  Copyright © 2019 tg. All rights reserved.
+//
+
+#ifndef DemoPCH_pch
+#define DemoPCH_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+#import "BaseViewController.h"
+#import "Configs.h"
+#import "ConstString.h"
+#import "UIButton+config.h"
+#import "UIColor+Config.h"
+#import "NSString+Config.h"
+#import "UIView+Config.h"
+#import "NSObject+Config.h"
+#import "UIViewController+Config.h"
+#import "NSMutableAttributedString+attributedStringConfig.h"
+
+
+
+#ifdef DEBUG
+
+#define NSLog(FORMAT, ...) (void)fprintf(stderr,"\nfunction:%s line:%d content:\n%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
+
+#else
+
+#define NSLog(FORMAT, ...) nil
+
+#endif
+/**   NSBundle  */
+#define NIB_FROM_CLASS(class) [UINib nibWithNibName:NSStringFromClass(class) bundle:[NSBundle mainBundle]]
+
+/**   TableView  register  */
+#define TableView_Reg_Cell(table,cell)             [table registerClass:[cell class] forCellReuseIdentifier:cell.classname];
+#define TableView_Reg_Cell_Nib(table,cell)         [table registerNib:NIB_FROM_CLASS(cell) forCellReuseIdentifier:cell.classname];
+#define TableView_Reg_HeaderFooter(view,class)     [view registerClass:[class class] forHeaderFooterViewReuseIdentifier:class];
+#define TableView_Reg_HeaderFooter_Nib(view,class) [view registerNib:NIB_FROM_CLASS(class) forHeaderFooterViewReuseIdentifier:class.classname];
+
+/**   keyWindow */
+#define KeyWindow [UIApplication sharedApplication].delegate.window
+
+/**   RootViewController  */
+#define RootVC KeyWindow.rootViewController
+
+/**   Image */
+#define Image(name) [UIImage imageNamed:name]
+
+/**   RunTime Associated */
+#define CATEGORY_PROPERTY_STRONG_TYPE(getter_method_name, setter_method_name, type)\
+- (type *)getter_method_name\
+{\
+return objc_getAssociatedObject(self, _cmd);\
+}\
+\
+- (void)set##setter_method_name:(type *)getter_method_name\
+{\
+objc_setAssociatedObject(self, @selector(getter_method_name), getter_method_name, OBJC_ASSOCIATION_RETAIN_NONATOMIC);\
+}\
+
+#define CATEGORY_PROPERTY_COPY_TYPE(getter_method_name, setter_method_name, type)\
+- (type *)getter_method_name\
+{\
+return objc_getAssociatedObject(self, _cmd);\
+}\
+\
+- (void)set##setter_method_name:(type *)getter_method_name\
+{\
+objc_setAssociatedObject(self, @selector(getter_method_name), getter_method_name, OBJC_ASSOCIATION_COPY_NONATOMIC);\
+}\
+
+#define CATEGORY_PROPERTY_ASSIGN_TYPE(getter_method_name, setter_method_name, type, getValueMethod)\
+- (type)getter_method_name\
+{\
+return [objc_getAssociatedObject(self, _cmd) getValueMethod];\
+}\
+\
+- (void)set##setter_method_name:(type)getter_method_name\
+{\
+objc_setAssociatedObject(self, @selector(getter_method_name), @(getter_method_name), OBJC_ASSOCIATION_RETAIN_NONATOMIC);\
+}\
+
+
+
+#endif /* DemoPCH_pch */
