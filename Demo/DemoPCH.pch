@@ -34,6 +34,12 @@
 #define NSLog(FORMAT, ...) nil
 
 #endif
+
+/** SCREEN_WIDTH  SCREEN_HEIGHT */
+#define SCREEN_WIDTH                                ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT                               ([UIScreen mainScreen].bounds.size.height)
+
+
 /**   NSBundle  */
 #define NIB_FROM_CLASS(class) [UINib nibWithNibName:NSStringFromClass(class) bundle:[NSBundle mainBundle]]
 

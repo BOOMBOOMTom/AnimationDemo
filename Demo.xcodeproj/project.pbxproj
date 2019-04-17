@@ -37,6 +37,7 @@
 		D3EFD0BB225C6A4300B805A2 /* CountDownTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EFD0BA225C6A4300B805A2 /* CountDownTableViewCell.m */; };
 		D3EFD0BE225C7B6900B805A2 /* UIViewController+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EFD0BD225C7B6900B805A2 /* UIViewController+Config.m */; };
 		D3EFD0C1225C851800B805A2 /* NSString+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EFD0C0225C851800B805A2 /* NSString+Config.m */; };
+		D3F2D35E2266FBFF0007DA37 /* EmitterAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F2D35D2266FBFF0007DA37 /* EmitterAnimationViewController.m */; };
 		D3FDFD64225C476500375D9C /* OneVCTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FDFD63225C476500375D9C /* OneVCTableViewItem.m */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,8 @@
 		D3EFD0BD225C7B6900B805A2 /* UIViewController+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Config.m"; sourceTree = "<group>"; };
 		D3EFD0BF225C851800B805A2 /* NSString+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Config.h"; sourceTree = "<group>"; };
 		D3EFD0C0225C851800B805A2 /* NSString+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Config.m"; sourceTree = "<group>"; };
+		D3F2D35C2266FBFF0007DA37 /* EmitterAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmitterAnimationViewController.h; sourceTree = "<group>"; };
+		D3F2D35D2266FBFF0007DA37 /* EmitterAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmitterAnimationViewController.m; sourceTree = "<group>"; };
 		D3FDFD61225C435D00375D9C /* DemoPCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoPCH.pch; sourceTree = "<group>"; };
 		D3FDFD62225C476500375D9C /* OneVCTableViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneVCTableViewItem.h; sourceTree = "<group>"; };
 		D3FDFD63225C476500375D9C /* OneVCTableViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneVCTableViewItem.m; sourceTree = "<group>"; };
@@ -302,6 +305,7 @@
 		D3EFD0AD225C61A400B805A2 /* VCS */ = {
 			isa = PBXGroup;
 			children = (
+				D3F2D35B2266FB780007DA37 /* 粒子效果 */,
 				D3033342225DFAE600533FB2 /* 快速搜索进行请求 */,
 				D3EFD0AE225C61B100B805A2 /* 倒计时 */,
 			);
@@ -328,6 +332,15 @@
 				D3033323225D945D00533FB2 /* QNotificationDefaultCenter.m */,
 			);
 			path = Untils;
+			sourceTree = "<group>";
+		};
+		D3F2D35B2266FB780007DA37 /* 粒子效果 */ = {
+			isa = PBXGroup;
+			children = (
+				D3F2D35C2266FBFF0007DA37 /* EmitterAnimationViewController.h */,
+				D3F2D35D2266FBFF0007DA37 /* EmitterAnimationViewController.m */,
+			);
+			path = "粒子效果";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -524,6 +537,7 @@
 				D3033337225DB83300533FB2 /* FontAttributeConfig.m in Sources */,
 				D362410E225C8A6A0042FAF8 /* UIColor+Config.m in Sources */,
 				D362410B225C88D70042FAF8 /* UIButton+config.m in Sources */,
+				D3F2D35E2266FBFF0007DA37 /* EmitterAnimationViewController.m in Sources */,
 				D3EFD0C1225C851800B805A2 /* NSString+Config.m in Sources */,
 				D3FDFD64225C476500375D9C /* OneVCTableViewItem.m in Sources */,
 				D3033324225D945D00533FB2 /* QNotificationDefaultCenter.m in Sources */,
