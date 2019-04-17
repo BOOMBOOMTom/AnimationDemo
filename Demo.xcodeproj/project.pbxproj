@@ -14,6 +14,8 @@
 		D3033337225DB83300533FB2 /* FontAttributeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D3033336225DB83300533FB2 /* FontAttributeConfig.m */; };
 		D303333A225DBAD000533FB2 /* ForegroundColorAttributeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D3033339225DBAD000533FB2 /* ForegroundColorAttributeConfig.m */; };
 		D303333D225DC4D000533FB2 /* NSMutableAttributedString+attributedStringConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D303333C225DC4D000533FB2 /* NSMutableAttributedString+attributedStringConfig.m */; };
+		D3033346225DFB1600533FB2 /* FieldSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3033344225DFB1600533FB2 /* FieldSearchViewController.m */; };
+		D3033347225DFB1600533FB2 /* FieldSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3033345225DFB1600533FB2 /* FieldSearchViewController.xib */; };
 		D3158D752251E0C4009E5A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3158D742251E0C4009E5A7F /* AppDelegate.m */; };
 		D3158D782251E0C4009E5A7F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3158D772251E0C4009E5A7F /* BaseViewController.m */; };
 		D3158D7B2251E0C4009E5A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3158D792251E0C4009E5A7F /* Main.storyboard */; };
@@ -70,6 +72,9 @@
 		D3033339225DBAD000533FB2 /* ForegroundColorAttributeConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForegroundColorAttributeConfig.m; sourceTree = "<group>"; };
 		D303333B225DC4D000533FB2 /* NSMutableAttributedString+attributedStringConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+attributedStringConfig.h"; sourceTree = "<group>"; };
 		D303333C225DC4D000533FB2 /* NSMutableAttributedString+attributedStringConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+attributedStringConfig.m"; sourceTree = "<group>"; };
+		D3033343225DFB1600533FB2 /* FieldSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FieldSearchViewController.h; sourceTree = "<group>"; };
+		D3033344225DFB1600533FB2 /* FieldSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FieldSearchViewController.m; sourceTree = "<group>"; };
+		D3033345225DFB1600533FB2 /* FieldSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldSearchViewController.xib; sourceTree = "<group>"; };
 		D3158D702251E0C4009E5A7F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3158D732251E0C4009E5A7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3158D742251E0C4009E5A7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -193,6 +198,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		D3033342225DFAE600533FB2 /* 快速搜索进行请求 */ = {
+			isa = PBXGroup;
+			children = (
+				D3033343225DFB1600533FB2 /* FieldSearchViewController.h */,
+				D3033344225DFB1600533FB2 /* FieldSearchViewController.m */,
+				D3033345225DFB1600533FB2 /* FieldSearchViewController.xib */,
+			);
+			path = "快速搜索进行请求";
+			sourceTree = "<group>";
+		};
 		D3158D672251E0C4009E5A7F = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +302,7 @@
 		D3EFD0AD225C61A400B805A2 /* VCS */ = {
 			isa = PBXGroup;
 			children = (
+				D3033342225DFAE600533FB2 /* 快速搜索进行请求 */,
 				D3EFD0AE225C61B100B805A2 /* 倒计时 */,
 			);
 			path = VCS;
@@ -424,6 +440,7 @@
 				D3158D7D2251E0C5009E5A7F /* Assets.xcassets in Resources */,
 				D3158D7B2251E0C4009E5A7F /* Main.storyboard in Resources */,
 				D3158DA92251E0F0009E5A7F /* OneViewController.xib in Resources */,
+				D3033347225DFB1600533FB2 /* FieldSearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +527,7 @@
 				D3EFD0C1225C851800B805A2 /* NSString+Config.m in Sources */,
 				D3FDFD64225C476500375D9C /* OneVCTableViewItem.m in Sources */,
 				D3033324225D945D00533FB2 /* QNotificationDefaultCenter.m in Sources */,
+				D3033346225DFB1600533FB2 /* FieldSearchViewController.m in Sources */,
 				D3EFD0BB225C6A4300B805A2 /* CountDownTableViewCell.m in Sources */,
 				D3033321225D8F9700533FB2 /* AnimationsViewController.m in Sources */,
 				D3158D782251E0C4009E5A7F /* BaseViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #import "OneVCTableViewItem.h"
 #import "CountDownViewController.h"
 #import "OneTableViewCell.h"
+#import "FieldSearchViewController.h"
 
 @interface OneViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -29,24 +30,8 @@
     
     self.sourceArray = @[
                          [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
-                         [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
+                         [OneVCTableViewItem initWithTitle:@"即时搜索" vcName:FieldSearchViewController.classname],
+                         
                          
                          ];
     
@@ -73,7 +58,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 64;
+    return 54;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     OneTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:OneTableViewCell.classname forIndexPath:indexPath];
