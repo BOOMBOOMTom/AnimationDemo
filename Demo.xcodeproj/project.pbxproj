@@ -30,6 +30,8 @@
 		D362410E225C8A6A0042FAF8 /* UIColor+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D362410D225C8A6A0042FAF8 /* UIColor+Config.m */; };
 		D3624112225CA33D0042FAF8 /* OYCountDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3624110225CA33C0042FAF8 /* OYCountDownManager.m */; };
 		D3624116225CADE60042FAF8 /* AppleSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = D3624115225CADE60042FAF8 /* AppleSystemService.m */; };
+		D3A4554B22700FAF007C6832 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4554A22700FAF007C6832 /* GCDTimer.m */; };
+		D3A4555822707428007C6832 /* FadeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4555722707428007C6832 /* FadeAnimationViewController.m */; };
 		D3EFD0AC225C4BC300B805A2 /* OneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EFD0AB225C4BC300B805A2 /* OneTableViewCell.m */; };
 		D3EFD0B1225C61D900B805A2 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EFD0B0225C61D900B805A2 /* CountDownViewController.m */; };
 		D3EFD0B5225C628B00B805A2 /* UIView+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EFD0B4225C628B00B805A2 /* UIView+Config.m */; };
@@ -103,6 +105,10 @@
 		D3624111225CA33C0042FAF8 /* OYCountDownManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYCountDownManager.h; sourceTree = "<group>"; };
 		D3624114225CADE60042FAF8 /* AppleSystemService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleSystemService.h; sourceTree = "<group>"; };
 		D3624115225CADE60042FAF8 /* AppleSystemService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleSystemService.m; sourceTree = "<group>"; };
+		D3A4554922700FAF007C6832 /* GCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		D3A4554A22700FAF007C6832 /* GCDTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		D3A4555622707428007C6832 /* FadeAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FadeAnimationViewController.h; sourceTree = "<group>"; };
+		D3A4555722707428007C6832 /* FadeAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FadeAnimationViewController.m; sourceTree = "<group>"; };
 		D3EFD0A9225C4B2400B805A2 /* Configs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Configs.h; sourceTree = "<group>"; };
 		D3EFD0AA225C4BC300B805A2 /* OneTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneTableViewCell.h; sourceTree = "<group>"; };
 		D3EFD0AB225C4BC300B805A2 /* OneTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneTableViewCell.m; sourceTree = "<group>"; };
@@ -302,12 +308,31 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		D3A4554822700F9D007C6832 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				D3A4554922700FAF007C6832 /* GCDTimer.h */,
+				D3A4554A22700FAF007C6832 /* GCDTimer.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		D3A4555922707860007C6832 /* 碎片效果 */ = {
+			isa = PBXGroup;
+			children = (
+				D3A4555622707428007C6832 /* FadeAnimationViewController.h */,
+				D3A4555722707428007C6832 /* FadeAnimationViewController.m */,
+			);
+			path = "碎片效果";
+			sourceTree = "<group>";
+		};
 		D3EFD0AD225C61A400B805A2 /* VCS */ = {
 			isa = PBXGroup;
 			children = (
-				D3F2D35B2266FB780007DA37 /* 粒子效果 */,
-				D3033342225DFAE600533FB2 /* 快速搜索进行请求 */,
 				D3EFD0AE225C61B100B805A2 /* 倒计时 */,
+				D3033342225DFAE600533FB2 /* 快速搜索进行请求 */,
+				D3F2D35B2266FB780007DA37 /* 粒子效果 */,
+				D3A4555922707860007C6832 /* 碎片效果 */,
 			);
 			path = VCS;
 			sourceTree = "<group>";
@@ -326,6 +351,7 @@
 		D3EFD0B2225C626000B805A2 /* Untils */ = {
 			isa = PBXGroup;
 			children = (
+				D3A4554822700F9D007C6832 /* GCD */,
 				D3624114225CADE60042FAF8 /* AppleSystemService.h */,
 				D3624115225CADE60042FAF8 /* AppleSystemService.m */,
 				D3033322225D945D00533FB2 /* QNotificationDefaultCenter.h */,
@@ -542,9 +568,11 @@
 				D3FDFD64225C476500375D9C /* OneVCTableViewItem.m in Sources */,
 				D3033324225D945D00533FB2 /* QNotificationDefaultCenter.m in Sources */,
 				D3033346225DFB1600533FB2 /* FieldSearchViewController.m in Sources */,
+				D3A4555822707428007C6832 /* FadeAnimationViewController.m in Sources */,
 				D3EFD0BB225C6A4300B805A2 /* CountDownTableViewCell.m in Sources */,
 				D3033321225D8F9700533FB2 /* AnimationsViewController.m in Sources */,
 				D3158D782251E0C4009E5A7F /* BaseViewController.m in Sources */,
+				D3A4554B22700FAF007C6832 /* GCDTimer.m in Sources */,
 				D3624116225CADE60042FAF8 /* AppleSystemService.m in Sources */,
 				D3158D832251E0C5009E5A7F /* main.m in Sources */,
 				D3EFD0B1225C61D900B805A2 /* CountDownViewController.m in Sources */,

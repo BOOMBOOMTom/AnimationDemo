@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,8 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DsQ-Ve-dya">
-                    <rect key="frame" x="16" y="29" width="375" height="30"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入点什么" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DsQ-Ve-dya">
+                    <rect key="frame" x="16" y="29" width="343" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="YjL-er-kb3"/>
                     </constraints>
@@ -43,7 +43,7 @@
             <constraints>
                 <constraint firstItem="ud2-KF-sEu" firstAttribute="top" secondItem="DsQ-Ve-dya" secondAttribute="bottom" constant="20" id="API-9T-q24"/>
                 <constraint firstItem="DsQ-Ve-dya" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="CkT-0U-Z6d"/>
-                <constraint firstItem="DsQ-Ve-dya" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" constant="16" id="eMe-FS-r8W"/>
+                <constraint firstItem="DsQ-Ve-dya" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" constant="-16" id="eMe-FS-r8W"/>
                 <constraint firstItem="ud2-KF-sEu" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="t2l-tP-OuC"/>
                 <constraint firstItem="DsQ-Ve-dya" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="9" id="uTZ-hT-kti"/>
                 <constraint firstItem="ud2-KF-sEu" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="vPa-gl-NNr"/>

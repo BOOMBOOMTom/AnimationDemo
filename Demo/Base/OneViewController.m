@@ -12,6 +12,7 @@
 #import "OneTableViewCell.h"
 #import "FieldSearchViewController.h"
 #import "EmitterAnimationViewController.h"
+#import "FadeAnimationViewController.h"
 
 @interface OneViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -33,7 +34,7 @@
                          [OneVCTableViewItem initWithTitle:@"一个简单的倒计时" vcName:CountDownViewController.classname],
                          [OneVCTableViewItem initWithTitle:@"即时搜索" vcName:FieldSearchViewController.classname],
                          [OneVCTableViewItem initWithTitle:@"进场粒子效果" vcName:EmitterAnimationViewController.classname],
-                         
+                         [OneVCTableViewItem initWithTitle:@"碎片渐变效果" vcName:FadeAnimationViewController.classname],
                          
                          
                          ];
