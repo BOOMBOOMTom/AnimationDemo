@@ -9,6 +9,7 @@ def testing_pods
     pod 'Aspects', '1.4.1'
     pod 'NerdyUI', '1.2.1'
     pod 'KZWFoundation'
+    pod 'Aspects', '1.4.1'
 pod 'pop', '~> 1.0'
 pod "OKObserver"
     pod 'IQKeyboardManager', '5.0.8'  #新版本键盘收回导致内容上偏

@@ -26,6 +26,7 @@
 		D3158D982251E0C5009E5A7F /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3158D972251E0C5009E5A7F /* DemoUITests.m */; };
 		D3158DA82251E0F0009E5A7F /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3158DA62251E0F0009E5A7F /* OneViewController.m */; };
 		D3158DA92251E0F0009E5A7F /* OneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3158DA72251E0F0009E5A7F /* OneViewController.xib */; };
+		D3179DEF22715C9300324EBC /* NSObject+ZXPJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D3179DED22715C9200324EBC /* NSObject+ZXPJSONModel.m */; };
 		D362410B225C88D70042FAF8 /* UIButton+config.m in Sources */ = {isa = PBXBuildFile; fileRef = D362410A225C88D70042FAF8 /* UIButton+config.m */; };
 		D362410E225C8A6A0042FAF8 /* UIColor+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D362410D225C8A6A0042FAF8 /* UIColor+Config.m */; };
 		D3624112225CA33D0042FAF8 /* OYCountDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3624110225CA33C0042FAF8 /* OYCountDownManager.m */; };
@@ -97,6 +98,8 @@
 		D3158DA52251E0F0009E5A7F /* OneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
 		D3158DA62251E0F0009E5A7F /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
 		D3158DA72251E0F0009E5A7F /* OneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneViewController.xib; sourceTree = "<group>"; };
+		D3179DED22715C9200324EBC /* NSObject+ZXPJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXPJSONModel.m"; sourceTree = "<group>"; };
+		D3179DEE22715C9300324EBC /* NSObject+ZXPJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXPJSONModel.h"; sourceTree = "<group>"; };
 		D3624109225C88D70042FAF8 /* UIButton+config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+config.h"; sourceTree = "<group>"; };
 		D362410A225C88D70042FAF8 /* UIButton+config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+config.m"; sourceTree = "<group>"; };
 		D362410C225C8A6A0042FAF8 /* UIColor+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Config.h"; sourceTree = "<group>"; };
@@ -281,6 +284,15 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
+		D3179DEC22715C7F00324EBC /* QJsonModel */ = {
+			isa = PBXGroup;
+			children = (
+				D3179DEE22715C9300324EBC /* NSObject+ZXPJSONModel.h */,
+				D3179DED22715C9200324EBC /* NSObject+ZXPJSONModel.m */,
+			);
+			path = QJsonModel;
+			sourceTree = "<group>";
+		};
 		D362410F225CA32D0042FAF8 /* 3Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +363,7 @@
 		D3EFD0B2225C626000B805A2 /* Untils */ = {
 			isa = PBXGroup;
 			children = (
+				D3179DEC22715C7F00324EBC /* QJsonModel */,
 				D3A4554822700F9D007C6832 /* GCD */,
 				D3624114225CADE60042FAF8 /* AppleSystemService.h */,
 				D3624115225CADE60042FAF8 /* AppleSystemService.m */,
@@ -563,6 +576,7 @@
 				D3033337225DB83300533FB2 /* FontAttributeConfig.m in Sources */,
 				D362410E225C8A6A0042FAF8 /* UIColor+Config.m in Sources */,
 				D362410B225C88D70042FAF8 /* UIButton+config.m in Sources */,
+				D3179DEF22715C9300324EBC /* NSObject+ZXPJSONModel.m in Sources */,
 				D3F2D35E2266FBFF0007DA37 /* EmitterAnimationViewController.m in Sources */,
 				D3EFD0C1225C851800B805A2 /* NSString+Config.m in Sources */,
 				D3FDFD64225C476500375D9C /* OneVCTableViewItem.m in Sources */,
