@@ -16,6 +16,8 @@
 		D303333D225DC4D000533FB2 /* NSMutableAttributedString+attributedStringConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D303333C225DC4D000533FB2 /* NSMutableAttributedString+attributedStringConfig.m */; };
 		D3033346225DFB1600533FB2 /* FieldSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3033344225DFB1600533FB2 /* FieldSearchViewController.m */; };
 		D3033347225DFB1600533FB2 /* FieldSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3033345225DFB1600533FB2 /* FieldSearchViewController.xib */; };
+		D306DEC422F6BCDE00FBFEC9 /* ArchiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D306DEC322F6BCDE00FBFEC9 /* ArchiveModel.m */; };
+		D306DEC722F6BD0700FBFEC9 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = D306DEC622F6BD0700FBFEC9 /* NSObject+Runtime.m */; };
 		D3158D752251E0C4009E5A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3158D742251E0C4009E5A7F /* AppDelegate.m */; };
 		D3158D782251E0C4009E5A7F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3158D772251E0C4009E5A7F /* BaseViewController.m */; };
 		D3158D7B2251E0C4009E5A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3158D792251E0C4009E5A7F /* Main.storyboard */; };
@@ -31,6 +33,7 @@
 		D362410E225C8A6A0042FAF8 /* UIColor+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D362410D225C8A6A0042FAF8 /* UIColor+Config.m */; };
 		D3624112225CA33D0042FAF8 /* OYCountDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3624110225CA33C0042FAF8 /* OYCountDownManager.m */; };
 		D3624116225CADE60042FAF8 /* AppleSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = D3624115225CADE60042FAF8 /* AppleSystemService.m */; };
+		D379A2CD22B4B767007E50D1 /* BlockTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D379A2CC22B4B767007E50D1 /* BlockTestModel.m */; };
 		D3A4554B22700FAF007C6832 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4554A22700FAF007C6832 /* GCDTimer.m */; };
 		D3A4555822707428007C6832 /* FadeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4555722707428007C6832 /* FadeAnimationViewController.m */; };
 		D3EFD0AC225C4BC300B805A2 /* OneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EFD0AB225C4BC300B805A2 /* OneTableViewCell.m */; };
@@ -79,6 +82,10 @@
 		D3033343225DFB1600533FB2 /* FieldSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FieldSearchViewController.h; sourceTree = "<group>"; };
 		D3033344225DFB1600533FB2 /* FieldSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FieldSearchViewController.m; sourceTree = "<group>"; };
 		D3033345225DFB1600533FB2 /* FieldSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldSearchViewController.xib; sourceTree = "<group>"; };
+		D306DEC222F6BCDE00FBFEC9 /* ArchiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchiveModel.h; sourceTree = "<group>"; };
+		D306DEC322F6BCDE00FBFEC9 /* ArchiveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiveModel.m; sourceTree = "<group>"; };
+		D306DEC522F6BD0700FBFEC9 /* NSObject+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		D306DEC622F6BD0700FBFEC9 /* NSObject+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 		D3158D702251E0C4009E5A7F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3158D732251E0C4009E5A7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3158D742251E0C4009E5A7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,6 +115,8 @@
 		D3624111225CA33C0042FAF8 /* OYCountDownManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OYCountDownManager.h; sourceTree = "<group>"; };
 		D3624114225CADE60042FAF8 /* AppleSystemService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleSystemService.h; sourceTree = "<group>"; };
 		D3624115225CADE60042FAF8 /* AppleSystemService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleSystemService.m; sourceTree = "<group>"; };
+		D379A2CB22B4B767007E50D1 /* BlockTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockTestModel.h; sourceTree = "<group>"; };
+		D379A2CC22B4B767007E50D1 /* BlockTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTestModel.m; sourceTree = "<group>"; };
 		D3A4554922700FAF007C6832 /* GCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
 		D3A4554A22700FAF007C6832 /* GCDTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
 		D3A4555622707428007C6832 /* FadeAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FadeAnimationViewController.h; sourceTree = "<group>"; };
@@ -220,6 +229,15 @@
 			path = "快速搜索进行请求";
 			sourceTree = "<group>";
 		};
+		D306DEC122F6BCB800FBFEC9 /* 自动存储Model */ = {
+			isa = PBXGroup;
+			children = (
+				D306DEC222F6BCDE00FBFEC9 /* ArchiveModel.h */,
+				D306DEC322F6BCDE00FBFEC9 /* ArchiveModel.m */,
+			);
+			path = "自动存储Model";
+			sourceTree = "<group>";
+		};
 		D3158D672251E0C4009E5A7F = {
 			isa = PBXGroup;
 			children = (
@@ -305,9 +323,12 @@
 		D3624113225CADC80042FAF8 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				D306DEC122F6BCB800FBFEC9 /* 自动存储Model */,
 				D3033334225DB61000533FB2 /* String */,
 				D3EFD0B3225C628B00B805A2 /* UIView+Config.h */,
 				D3EFD0B4225C628B00B805A2 /* UIView+Config.m */,
+				D306DEC522F6BD0700FBFEC9 /* NSObject+Runtime.h */,
+				D306DEC622F6BD0700FBFEC9 /* NSObject+Runtime.m */,
 				D3EFD0B6225C675000B805A2 /* NSObject+Config.h */,
 				D3EFD0B7225C675000B805A2 /* NSObject+Config.m */,
 				D3EFD0BC225C7B6900B805A2 /* UIViewController+Config.h */,
@@ -329,13 +350,15 @@
 			path = GCD;
 			sourceTree = "<group>";
 		};
-		D3A4555922707860007C6832 /* 碎片效果 */ = {
+		D3A4555922707860007C6832 /* 测试代码 */ = {
 			isa = PBXGroup;
 			children = (
 				D3A4555622707428007C6832 /* FadeAnimationViewController.h */,
 				D3A4555722707428007C6832 /* FadeAnimationViewController.m */,
+				D379A2CB22B4B767007E50D1 /* BlockTestModel.h */,
+				D379A2CC22B4B767007E50D1 /* BlockTestModel.m */,
 			);
-			path = "碎片效果";
+			path = "测试代码";
 			sourceTree = "<group>";
 		};
 		D3EFD0AD225C61A400B805A2 /* VCS */ = {
@@ -344,7 +367,7 @@
 				D3EFD0AE225C61B100B805A2 /* 倒计时 */,
 				D3033342225DFAE600533FB2 /* 快速搜索进行请求 */,
 				D3F2D35B2266FB780007DA37 /* 粒子效果 */,
-				D3A4555922707860007C6832 /* 碎片效果 */,
+				D3A4555922707860007C6832 /* 测试代码 */,
 			);
 			path = VCS;
 			sourceTree = "<group>";
@@ -573,8 +596,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3EFD0BE225C7B6900B805A2 /* UIViewController+Config.m in Sources */,
+				D379A2CD22B4B767007E50D1 /* BlockTestModel.m in Sources */,
 				D3033337225DB83300533FB2 /* FontAttributeConfig.m in Sources */,
 				D362410E225C8A6A0042FAF8 /* UIColor+Config.m in Sources */,
+				D306DEC722F6BD0700FBFEC9 /* NSObject+Runtime.m in Sources */,
+				D306DEC422F6BCDE00FBFEC9 /* ArchiveModel.m in Sources */,
 				D362410B225C88D70042FAF8 /* UIButton+config.m in Sources */,
 				D3179DEF22715C9300324EBC /* NSObject+ZXPJSONModel.m in Sources */,
 				D3F2D35E2266FBFF0007DA37 /* EmitterAnimationViewController.m in Sources */,

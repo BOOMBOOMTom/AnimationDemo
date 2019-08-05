@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = UIColor.whiteColor;
     self.title = @"点一下就知道了";
     
     self.startBtn = [[[[UIButton buttonWithType:UIButtonTypeCustom]config:^(UIButton * _Nonnull view) {

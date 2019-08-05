@@ -14,6 +14,8 @@
     return NSStringFromClass([self class]);
 }
 
-
+-(NSString *)classname{
+    return NSStringFromClass([self class]);
+}
 
 @end

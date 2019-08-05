@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+static int a = 0;
+
 @interface FadeAnimationViewController : BaseViewController
 
 @end
